@@ -1,4 +1,4 @@
-// Define an object to hold inventory records
+
 const inventory = {
     pen: 10,
     pencil: 15,
@@ -7,7 +7,7 @@ const inventory = {
     books: 20,
   };
   
-  // Function to check inventory status
+
   function checkInventory(item) {
     if (inventory[item]) {
       console.log(`We have ${inventory[item]} ${item}(s) in stock.`);
@@ -16,7 +16,7 @@ const inventory = {
     }
   }
   
-  // Function to update inventory count
+ 
   function updateInventory(item, count) {
     if (inventory[item]) {
       inventory[item] += count;
@@ -26,7 +26,7 @@ const inventory = {
     console.log(`${count} ${item}(s) have been added to inventory.`);
   }
   
-  // Function to remove items from inventory
+  
   function removeInventory(item, count) {
     if (inventory[item]) {
       inventory[item] -= count;
@@ -36,8 +36,7 @@ const inventory = {
     }
   }
   
-  // Example usage
-  checkInventory('pen'); // Output: We have 10 pen(s) in stock.
-  updateInventory('pen', 5); // Output: 5 pen(s) have been added to inventory.
-  removeInventory('books', 10); // Output: 10 books(s) have been removed from inventory.
+  checkInventory('pen'); 
+  updateInventory('pen', 5); 
+  removeInventory('books', 10);
   

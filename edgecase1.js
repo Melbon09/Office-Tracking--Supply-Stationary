@@ -13,5 +13,4 @@ function displayItemList() {
   }
 }
 
-// Call the function to display the item list on page load
 displayItemList();

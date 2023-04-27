@@ -19,7 +19,7 @@
 				.then(response => response.json())
 				.then(data => {
 					if (data.available) {
-						document.getElementById("availability").innerHTML = supply + " is available.";
+						document.getElementById("availability").innerHTML = supply + "	 is available.";
 					} else {
 						document.getElementById("availability").innerHTML = supply + " is not available.";
 					}

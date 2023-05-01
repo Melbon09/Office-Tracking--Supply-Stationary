@@ -10,10 +10,7 @@ io.on('connection', (socket) => {
 
   socket.on('update-supply', (data) => {
     console.log('Received supply update:', data);
-    // Update supply data model here
-    // ...
-
-    // Broadcast the updated supply data to all connected clients
+  
     io.emit('supply-update', data);
   });
 
